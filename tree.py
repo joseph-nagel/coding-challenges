@@ -40,6 +40,9 @@ def print_tree(dir_path, prefix=''):
         # get list of items
         items = list(dir_path.iterdir())
 
+        # remove hidden files/dirs
+        items = [p for p in items if not p.name.startswith('.')]
+
         # sort items alphabetically
         items = sorted(items)
 
@@ -57,7 +60,7 @@ def print_tree(dir_path, prefix=''):
             # set symbol (to be put before name)
             symbol = LAST if is_last else MIDDLE
 
-            # print dir or file name with prefix and symbol
+            # print file/dir name with prefix and symbol
             print(prefix + symbol + p.name)
 
             if is_dir:
