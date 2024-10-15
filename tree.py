@@ -8,6 +8,7 @@ The outputs mimics the Unix tree command.
 
 '''
 
+from typing import Union, Tuple
 from argparse import ArgumentParser
 from pathlib import Path
 
@@ -30,7 +31,7 @@ def parse_args():
     return args
 
 
-def print_tree(dir_path, prefix=''):
+def print_tree(dir_path: Union[str, Path], prefix: str = '') -> Tuple[int, int]:
     '''Print the directory tree structure.'''
 
     dir_path = Path(dir_path)
