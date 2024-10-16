@@ -5,11 +5,17 @@ Some tech companies ask applicants to complete such exercises as part of the hir
 
 ## TOC
 
+- [Fibonacci sequence](challenges/fibonacci.py)
+
 - [Non-maximum suppression](challenges/nms.py)
 
 - [Print directory tree](challenges/tree.py)
 
 ## Run scripts
+
+```
+python challenges/fibonacci.py
+```
 
 ```
 python challenges/nms.py
