@@ -5,7 +5,7 @@ Some tech companies ask applicants to complete such exercises as part of the hir
 
 ## TOC
 
-- [Non-maximum suppression](nms.py)
+- [Non-maximum suppression](challenges/nms.py)
 
-- [Print directory tree](tree.py)
+- [Print directory tree](challenges/tree.py)
 
