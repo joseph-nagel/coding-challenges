@@ -3,9 +3,9 @@ Non-maximum suppression.
 
 Summary
 -------
-A simple implementation of non-maximum suppression (NMS) is provided in this module.
-In the context of object detection, this well-known algorithm is typically used for
-reducing a high number of bounding boxes that may be significantly overlapping.
+An implementation of non-maximum suppression (NMS) is provided in this module.
+In the context of object detection, this widespread algorithm is typically used
+for reducing a high number of bounding boxes that may significantly overlap.
 
 '''
 
@@ -32,6 +32,12 @@ def _get_coords(boxes: Union[np.ndarray, list]) -> Tuple[np.ndarray]:
     y1 = boxes[...,1]
     x2 = boxes[...,2]
     y2 = boxes[...,3]
+
+    # check for coordinate violations
+    if (x2 < x1).any():
+        raise ValueError('Coordinates violate x2 >= x1')
+    elif (y2 < y1).any():
+        raise ValueError('Coordinates violate y2 >= y1')
 
     return x1, y1, x2, y2
 

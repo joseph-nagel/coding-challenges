@@ -9,3 +9,13 @@ Some tech companies ask applicants to complete such exercises as part of the hir
 
 - [Print directory tree](challenges/tree.py)
 
+## Run scripts
+
+```
+python challenges/nms.py
+```
+
+```
+python challenges/tree.py .
+```
+

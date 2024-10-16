@@ -4,7 +4,11 @@ Print directory tree.
 Summary
 -------
 This scripts prints the structure of a directory.
-The outputs mimics the Unix tree command.
+The output mimics the Unix tree command.
+
+Example
+-------
+python challenges/tree.py .
 
 '''
 
