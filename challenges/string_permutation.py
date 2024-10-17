@@ -1,5 +1,6 @@
 '''String permutation check.'''
 
+
 def count_chars(a):
     '''Count characters in string.'''
 

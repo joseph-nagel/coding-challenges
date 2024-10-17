@@ -1,5 +1,6 @@
 '''Fibonacci sequence.'''
 
+
 def fib_recursive(n):
     '''Generate Fibonacci numbers recursively.'''
 
