@@ -1,7 +1,7 @@
 '''String permutation check.'''
 
 
-def count_chars(a):
+def count_chars(a: str) -> dict:
     '''Count characters in string.'''
 
     counts = {}
@@ -15,7 +15,7 @@ def count_chars(a):
     return counts
 
 
-def check_permutation(a, b, verbose=False):
+def check_permutation(a: str, b: str, verbose: bool = False) -> bool:
     '''Check whether two strings are permutations.'''
 
     if len(a) != len(b):

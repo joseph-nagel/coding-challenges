@@ -1,7 +1,9 @@
 '''Fibonacci sequence.'''
 
+from typing import Iterator
 
-def fib_recursive(n):
+
+def fib_recursive(n: int) -> int:
     '''Generate Fibonacci numbers recursively.'''
 
     if n == 0:
@@ -16,7 +18,7 @@ def fib_recursive(n):
     return c
 
 
-def fib_for_loop(n):
+def fib_for_loop(n: int) -> int:
     '''Generate Fibonacci numbers with a for loop.'''
 
     a = 0
@@ -37,7 +39,7 @@ def fib_for_loop(n):
     return c
 
 
-def fib_generator(n):
+def fib_generator(n: int) -> Iterator[int]:
     '''Create Fibonacci numbers with a generator.'''
 
     a = 0
