@@ -7,27 +7,11 @@ Some tech companies ask applicants to complete such exercises as part of the hir
 
 - [Fibonacci sequence](challenges/fibonacci_numbers.py)
 
-- [String permutation check](challenges/string_permutation.py)
-
 - [Non-maximum suppression](challenges/non_max_suppression.py)
+
+- [String permutation check](challenges/string_permutation.py)
 
 - [Print directory tree](challenges/tree.py)
 
-## Run scripts
-
-```
-python challenges/fibonacci_numbers.py
-```
-
-```
-python challenges/string_permutation.py
-```
-
-```
-python challenges/non_max_suppression.py
-```
-
-```
-python challenges/tree.py .
-```
+- [Two-sum problem](challenges/two_sum.py)
 
