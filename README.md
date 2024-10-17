@@ -5,13 +5,15 @@ Some tech companies ask applicants to complete such exercises as part of the hir
 
 ## TOC
 
-- [Fibonacci sequence](challenges/fibonacci_numbers.py)
+- [Print directory tree](challenges/tree.py)
 
-- [Non-maximum suppression](challenges/non_max_suppression.py)
+- [Fibonacci sequence](challenges/fibonacci_numbers.py)
 
 - [String permutation check](challenges/string_permutation.py)
 
-- [Print directory tree](challenges/tree.py)
+- [Non-maximum suppression](challenges/non_max_suppression.py)
 
 - [Two-sum problem](challenges/two_sum.py)
+
+- [Three-sum problem](challenges/three_sum.py)
 

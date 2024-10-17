@@ -35,13 +35,14 @@ def two_sum_two_pointers(numbers: list[int], target: int) -> list[tuple[int, int
     r_idx = len(numbers) - 1
 
     while l_idx < r_idx:
-        current_sum = numbers[l_idx] + numbers[r_idx]
 
-        if current_sum == target:
+        curr_sum = numbers[l_idx] + numbers[r_idx]
+
+        if curr_sum == target:
             ids.append((l_idx, r_idx))
             l_idx += 1
 
-        elif current_sum < target:
+        elif curr_sum < target:
             l_idx += 1
 
         else:
@@ -61,6 +62,7 @@ def two_sum_hash_table(numbers: list[int], target: int) -> list[tuple[int, int]]
     seen_dict = {}
 
     for idx, num in enumerate(numbers):
+
         complement = target - num
 
         if complement in seen_dict:
