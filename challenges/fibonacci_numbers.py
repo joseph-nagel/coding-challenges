@@ -36,11 +36,27 @@ def fib_for_loop(n):
     return c
 
 
+def fib_generator(n):
+    '''Create Fibonacci numbers with a generator.'''
+
+    a = 0
+    b = 1
+
+    for _ in range(n):
+
+        yield a
+
+        a, b = b, a + b
+
+
 if __name__ == '__main__':
 
-    for n in range(5):
-        print(fib_recursive(n))
+    for f in fib_generator(5):
+        print(f)
 
     for n in range(5, 10):
+        print(fib_recursive(n))
+
+    for n in range(10, 15):
         print(fib_for_loop(n))
 
