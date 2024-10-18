@@ -17,3 +17,14 @@ Some tech companies ask applicants to complete such exercises as part of the hir
 
 - [Three-sum problem](challenges/three_sum.py)
 
+## Instructions
+
+- Installation:
+    ```
+    pip install -e .
+    ```
+- Testing:
+    ```
+    pytest
+    ```
+
