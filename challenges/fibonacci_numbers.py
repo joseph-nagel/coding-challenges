@@ -6,7 +6,10 @@ from typing import Iterator
 def fib_recursive(n: int) -> int:
     '''Generate Fibonacci numbers recursively.'''
 
-    if n == 0:
+    if n < 0:
+        raise ValueError('Negative number passed')
+
+    elif n == 0:
         c = 0
 
     elif n == 1:
@@ -20,6 +23,9 @@ def fib_recursive(n: int) -> int:
 
 def fib_for_loop(n: int) -> int:
     '''Generate Fibonacci numbers with a for loop.'''
+
+    if n < 0:
+        raise ValueError('Negative number passed')
 
     a = 0
     b = 1
@@ -41,6 +47,9 @@ def fib_for_loop(n: int) -> int:
 
 def fib_generator(n: int) -> Iterator[int]:
     '''Create Fibonacci numbers with a generator.'''
+
+    if n < 0:
+        raise ValueError('Negative number passed')
 
     a = 0
     b = 1
