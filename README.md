@@ -1,7 +1,8 @@
 # Coding challenges
 
 This repository contains some simple and well-known coding challenges.
-Some tech companies ask applicants to complete such exercises as part of the hiring process.
+Even though I am not a big fan of such exercises in general, I have started here to redo
+and collect all the tests that I was recently confronted with in actual job interviews.
 
 ## TOC
 
@@ -23,6 +24,7 @@ Some tech companies ask applicants to complete such exercises as part of the hir
     ```
     pip install -e .
     ```
+
 - Testing:
     ```
     pytest
