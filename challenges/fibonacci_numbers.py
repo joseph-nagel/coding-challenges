@@ -1,6 +1,6 @@
 '''Fibonacci sequence.'''
 
-from typing import Iterator
+from collections.abc import Iterator
 
 
 def fib_recursive(n: int) -> int:

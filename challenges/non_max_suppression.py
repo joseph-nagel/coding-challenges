@@ -9,12 +9,10 @@ for reducing a high number of bounding boxes that may significantly overlap.
 
 '''
 
-from typing import Union, Tuple, Optional
-
 import numpy as np
 
 
-def _get_coords(boxes: Union[np.ndarray, list]) -> Tuple[np.ndarray]:
+def _get_coords(boxes: np.ndarray | list) -> tuple[np.ndarray, ...]:
     '''Get bounding box coordinates.'''
 
     boxes = np.asarray(boxes)
@@ -42,7 +40,7 @@ def _get_coords(boxes: Union[np.ndarray, list]) -> Tuple[np.ndarray]:
     return x1, y1, x2, y2
 
 
-def compute_area(boxes: Union[np.ndarray, list]) -> np.ndarray:
+def compute_area(boxes: np.ndarray | list) -> np.ndarray:
     '''Compute bounding box areas.'''
 
     x1, y1, x2, y2 = _get_coords(boxes)
@@ -51,8 +49,8 @@ def compute_area(boxes: Union[np.ndarray, list]) -> np.ndarray:
 
 
 def compute_iou(
-    box: Union[np.ndarray, list],
-    others: Union[np.ndarray, list],
+    box: np.ndarray | list,
+    others: np.ndarray | list,
     eps: float = 1e-16
 ) -> np.ndarray:
     '''Compute intersections over unions.'''
@@ -82,9 +80,9 @@ def compute_iou(
 
 
 def nms(
-    boxes: Union[np.ndarray, list],
-    confs: Union[np.ndarray, list],
-    conf_thresh: Optional[float] = None,
+    boxes: np.ndarray | list,
+    confs: np.ndarray | list,
+    conf_thresh: float | None = None,
     iou_thresh: float = 0.5
 ) -> list[int]:
     '''Perform non-maximum suppression.'''

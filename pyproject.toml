@@ -22,7 +22,8 @@ dependencies = [
 
 [project.optional-dependencies]
 testing = [
-    "pytest"
+    "pytest",
+    "mypy"
 ]
 
 [project.urls]
