@@ -30,7 +30,7 @@ and collect all the tests that I was recently confronted with in actual job inte
     pytest
     ```
 
-- Type checking
+- Type checking:
     ```
     mypy challenges/
     ```
