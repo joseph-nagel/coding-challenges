@@ -4,6 +4,7 @@ This repository contains some simple and well-known coding challenges.
 Even though I am not a big fan of such exercises in general, I have started here to redo
 and collect all the tests that I was recently confronted with in actual job interviews.
 
+
 ## TOC
 
 - [Print directory tree](challenges/tree.py)
@@ -17,6 +18,7 @@ and collect all the tests that I was recently confronted with in actual job inte
 - [Two-sum problem](challenges/two_sum.py)
 
 - [Three-sum problem](challenges/three_sum.py)
+
 
 ## Instructions
 

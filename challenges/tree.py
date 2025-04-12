@@ -3,7 +3,7 @@ Print directory tree.
 
 Summary
 -------
-This scripts prints the structure of a directory.
+This script prints the structure of a directory.
 The output mimics the Unix tree command.
 
 Example

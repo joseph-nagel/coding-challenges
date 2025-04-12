@@ -14,7 +14,7 @@ The solutions differ in their time complexity.
 '''
 
 def three_sum_brute_force(numbers: list[int], target: int) -> list[tuple[int, int, int]]:
-    '''Solve three-sum problem in brute-force style with O(n^3) time complexity.'''
+    '''Solve the three-sum problem in brute-force style with O(n^3) time complexity.'''
 
     ids = [] # type: list[tuple[int, int, int]]
 
@@ -31,7 +31,7 @@ def three_sum_brute_force(numbers: list[int], target: int) -> list[tuple[int, in
 
 
 def three_sum_two_pointers(numbers: list[int], target: int) -> list[tuple[int, int, int]]:
-    '''Solve three-sum problem based on sorted numbers in O(n^2) time.'''
+    '''Solve the three-sum problem based on sorted numbers in O(n^2) time.'''
 
     if numbers != sorted(numbers):
         raise ValueError('This function requires the numbers to be sorted')
@@ -61,7 +61,7 @@ def three_sum_two_pointers(numbers: list[int], target: int) -> list[tuple[int, i
 
 
 def three_sum_hash_table(numbers: list[int], target: int) -> list[tuple[int, int, int]]:
-    '''Solve three-sum problem based on a hash table in O(n^2) time.'''
+    '''Solve the three-sum problem based on a hash table in O(n^2) time.'''
 
     if len(numbers) != len(set(numbers)):
         raise ValueError('This approach requires unique numbers')

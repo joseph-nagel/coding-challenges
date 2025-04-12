@@ -9,7 +9,7 @@ Three solutions with different time complexities are implemented.
 '''
 
 def two_sum_brute_force(numbers: list[int], target: int) -> list[tuple[int, int]]:
-    '''Solve two-sum problem in brute-force style with O(n^2) time complexity.'''
+    '''Solve the two-sum problem in brute-force style with O(n^2) time complexity.'''
 
     ids = [] # type: list[tuple[int, int]]
 
@@ -24,7 +24,7 @@ def two_sum_brute_force(numbers: list[int], target: int) -> list[tuple[int, int]
 
 
 def two_sum_two_pointers(numbers: list[int], target: int) -> list[tuple[int, int]]:
-    '''Solve two-sum problem based on sorted numbers in O(n) time.'''
+    '''Solve the two-sum problem based on sorted numbers in O(n log(n)) time (due to sorting).'''
 
     if numbers != sorted(numbers):
         raise ValueError('This function requires the numbers to be sorted')
@@ -52,7 +52,7 @@ def two_sum_two_pointers(numbers: list[int], target: int) -> list[tuple[int, int
 
 
 def two_sum_hash_table(numbers: list[int], target: int) -> list[tuple[int, int]]:
-    '''Solve two-sum problem based on a hash table in O(n) time.'''
+    '''Solve the two-sum problem based on a hash table (dict) in O(n) time.'''
 
     if len(numbers) != len(set(numbers)):
         raise ValueError('This approach requires unique numbers')
@@ -65,7 +65,7 @@ def two_sum_hash_table(numbers: list[int], target: int) -> list[tuple[int, int]]
 
         complement = target - num
 
-        if complement in seen_dict:
+        if complement in seen_dict.keys():
             ids.append((seen_dict[complement], idx))
 
         seen_dict[num] = idx

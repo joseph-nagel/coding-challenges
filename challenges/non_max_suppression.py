@@ -59,13 +59,14 @@ def compute_iou(
     box_x1, box_y1, box_x2, box_y2 = _get_coords(box)
     others_x1, others_y1, others_x2, others_y2 = _get_coords(others)
 
-    overlap_x1 = np.maximum(box_x1, others_x1) # compute elementwise maxima
-    overlap_y1 = np.maximum(box_y1, others_y1)
-    overlap_x2 = np.minimum(box_x2, others_x2) # compute elementwise minima
-    overlap_y2 = np.minimum(box_y2, others_y2)
+    highest_x1 = np.maximum(box_x1, others_x1) # calculate elementwise maxima
+    lowest_x2 = np.minimum(box_x2, others_x2) # calculate elementwise minima
 
-    intersection = (overlap_x2 - overlap_x1).clip(min=0) \
-                 * (overlap_y2 - overlap_y1).clip(min=0)
+    highest_y1 = np.maximum(box_y1, others_y1) # calculate elementwise maxima
+    lowest_y2 = np.minimum(box_y2, others_y2) # calculate elementwise minima
+
+    intersection = (lowest_x2 - highest_x1).clip(min=0) \
+                 * (lowest_y2 - highest_y1).clip(min=0)
 
     # compute unions
     box_area = compute_area(box)
