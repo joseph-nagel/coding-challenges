@@ -22,10 +22,12 @@ def implementation(request):
     ([1, 2, 3, 4, 5], 7, [(0, 1, 3)]),
     ([], 7, [])
 ])
-def test_correctness(implementation,
-                     numbers,
-                     target,
-                     ids_expected):
+def test_correctness(
+    implementation,
+    numbers,
+    target,
+    ids_expected
+):
 
     ids = implementation(numbers, target)
 

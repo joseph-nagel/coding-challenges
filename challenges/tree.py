@@ -55,7 +55,7 @@ def print_tree(dir_path: str | Path, prefix: str = '') -> tuple[int, int]:
     items = sorted(items)
 
     # initialize counters
-    num_dirs = 1 # count the root dir
+    num_dirs = 1  # count the root dir
     num_files = 0
 
     # loop over items

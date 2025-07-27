@@ -4,7 +4,7 @@
 def count_chars(a: str) -> dict[str, int]:
     '''Count characters in string.'''
 
-    counts = {} # type: dict[str, int]
+    counts = {}  # type: dict[str, int]
 
     for char in a:
         if char not in counts.keys():

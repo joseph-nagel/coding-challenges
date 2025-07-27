@@ -11,7 +11,7 @@ Three solutions with different time complexities are implemented.
 def two_sum_brute_force(numbers: list[int], target: int) -> list[tuple[int, int]]:
     '''Solve the two-sum problem in brute-force style with O(n^2) time complexity.'''
 
-    ids = [] # type: list[tuple[int, int]]
+    ids = []  # type: list[tuple[int, int]]
 
     for i in range(len(numbers) - 1):
 
@@ -29,7 +29,7 @@ def two_sum_two_pointers(numbers: list[int], target: int) -> list[tuple[int, int
     if numbers != sorted(numbers):
         raise ValueError('This function requires the numbers to be sorted')
 
-    ids = [] # type: list[tuple[int, int]]
+    ids = []  # type: list[tuple[int, int]]
 
     l_idx = 0
     r_idx = len(numbers) - 1
@@ -57,9 +57,9 @@ def two_sum_hash_table(numbers: list[int], target: int) -> list[tuple[int, int]]
     if len(numbers) != len(set(numbers)):
         raise ValueError('This approach requires unique numbers')
 
-    ids = [] # type: list[tuple[int, int]]
+    ids = []  # type: list[tuple[int, int]]
 
-    seen_dict = {} # type: dict[int, int]
+    seen_dict = {}  # type: dict[int, int]
 
     for idx, num in enumerate(numbers):
 
@@ -79,8 +79,6 @@ if __name__ == '__main__':
     target = 7
 
     print(two_sum_brute_force(numbers, target))
-
     print(two_sum_two_pointers(numbers, target))
-
     print(two_sum_hash_table(numbers, target))
 
