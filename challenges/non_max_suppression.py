@@ -26,10 +26,10 @@ def _get_coords(boxes: np.ndarray | list) -> tuple[np.ndarray, ...]:
         raise ValueError('Four elements expected in the coordinate axis')
 
     # get coordinates (the expected format is (x1, y1, x2, y2))
-    x1 = boxes[...,0]
-    y1 = boxes[...,1]
-    x2 = boxes[...,2]
-    y2 = boxes[...,3]
+    x1 = boxes[..., 0]
+    y1 = boxes[..., 1]
+    x2 = boxes[..., 2]
+    y2 = boxes[..., 3]
 
     # check for coordinate violations
     if (x2 < x1).any():
@@ -130,9 +130,9 @@ def nms(
 if __name__ == '__main__':
 
     boxes = [
-        [1., 1., 2., 3.],
-        [1., 1.5, 2., 3.5],
-        [0., 1., 2., 3.]
+        [1.0, 1.0, 2.0, 3.0],
+        [1.0, 1.5, 2.0, 3.5],
+        [0.0, 1.0, 2.0, 3.0]
     ]
 
     confs = [0.9, 0.8, 0.7]
