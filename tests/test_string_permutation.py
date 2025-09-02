@@ -14,4 +14,3 @@ from challenges.string_permutation import check_permutation
 def test_correctness(a, b, expected):
     is_permutation = check_permutation(a, b, verbose=False)
     assert is_permutation == expected
-

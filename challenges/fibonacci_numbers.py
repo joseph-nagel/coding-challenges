@@ -71,4 +71,3 @@ if __name__ == '__main__':
 
     for n in range(10, 15):
         print(fib_for_loop(n))
-

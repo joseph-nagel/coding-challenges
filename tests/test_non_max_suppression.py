@@ -22,4 +22,3 @@ def test_correctness(boxes, confs, ids_expected):
     )
 
     assert ids_selected == ids_expected
-

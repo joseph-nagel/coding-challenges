@@ -28,4 +28,3 @@ testing = [
 
 [project.urls]
 source = "https://github.com/joseph-nagel/coding-challenges"
-

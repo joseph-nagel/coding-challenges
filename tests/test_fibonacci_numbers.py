@@ -40,4 +40,3 @@ class TestNegative:
     def test_generator(self, idx):
         with pytest.raises(ValueError):
             _ = next(fib_generator(idx))
-

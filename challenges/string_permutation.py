@@ -41,4 +41,3 @@ if __name__ == '__main__':
 
     _ = check_permutation(a, b, verbose=True)
     _ = check_permutation(b, c, verbose=True)
-

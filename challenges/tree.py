@@ -98,4 +98,3 @@ if __name__ == '__main__':
     num_dirs, num_files = print_tree(dir_path)
 
     print(f'{num_dirs} directories, {num_files} files')
-

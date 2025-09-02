@@ -32,4 +32,3 @@ def test_correctness(
     ids = implementation(numbers, target)
 
     assert set(ids) == set(ids_expected)
-
